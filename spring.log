@@ -1,0 +1,896 @@
+2017-03-02 16:29:01.837  INFO 44220 --- [main] com.c.j.w.cms.CMSApplication             : Starting CMSApplication on DESKTOP-5IJV42V with PID 44220 (D:\workspace(test)\angular\pupa-master\framework\spring-boot-angularjs\target\classes started by zyf in D:\workspace(test)\angular\pupa-master\framework\spring-boot-angularjs)
+2017-03-02 16:29:01.837  INFO 44220 --- [main] com.c.j.w.cms.CMSApplication             : The following profiles are active: dev
+2017-03-02 16:29:01.919  INFO 44220 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@421bba99: startup date [Thu Mar 02 16:29:01 CST 2017]; root of context hierarchy
+2017-03-02 16:29:02.939  WARN 44220 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.c.j.w.cms.dao]' package. Please check your configuration.
+2017-03-02 16:29:02.940  WARN 44220 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'mybatisConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-03-02 16:29:03.192  INFO 44220 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$608345c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-02 16:29:03.690  INFO 44220 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-03-02 16:29:03.702  INFO 44220 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-02 16:29:03.703  INFO 44220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.5
+2017-03-02 16:29:03.916  INFO 44220 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-02 16:29:03.916  INFO 44220 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1997 ms
+2017-03-02 16:29:04.068  INFO 44220 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-02 16:29:04.072  INFO 44220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-02 16:29:04.073  INFO 44220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-02 16:29:04.073  INFO 44220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-02 16:29:04.073  INFO 44220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-02 16:29:04.074  INFO 44220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'accessLogFilter' to: [/*]
+2017-03-02 16:29:04.074  INFO 44220 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'sessionFilter' to: [/*]
+2017-03-02 16:29:04.677  INFO 44220 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/system/init],methods=[GET]}" onto public com.c.j.w.cms.core.pojo.Result<com.c.j.w.cms.core.pojo.User> com.c.j.w.cms.web.controller.SystemController.init()
+2017-03-02 16:29:04.678  INFO 44220 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout],methods=[GET]}" onto public java.lang.String com.c.j.w.cms.web.controller.user.UserController.logout()
+2017-03-02 16:29:04.678  INFO 44220 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.c.j.w.cms.core.pojo.Result com.c.j.w.cms.web.controller.user.UserController.login(java.lang.String,java.lang.String)
+2017-03-02 16:29:04.679  INFO 44220 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-03-02 16:29:04.681  INFO 44220 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-03-02 16:29:04.681  INFO 44220 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-03-02 16:29:04.681  INFO 44220 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-03-02 16:29:04.683  INFO 44220 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-02 16:29:04.684  INFO 44220 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-02 16:29:05.012  INFO 44220 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@421bba99: startup date [Thu Mar 02 16:29:01 CST 2017]; root of context hierarchy
+2017-03-02 16:29:05.065  INFO 44220 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-02 16:29:05.065  INFO 44220 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-02 16:29:05.082  INFO 44220 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionResolver
+2017-03-02 16:29:05.104  INFO 44220 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-02 16:29:05.125  INFO 44220 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-03-02 16:29:05.385  INFO 44220 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-02 16:29:05.387  INFO 44220 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'mainDataSource' has been autodetected for JMX exposure
+2017-03-02 16:29:05.393  INFO 44220 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'mainDataSource': registering with JMX server as MBean [com.alibaba.druid.pool.xa:name=mainDataSource,type=DruidXADataSource]
+2017-03-02 16:29:05.401  INFO 44220 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-03-02 16:29:05.424  INFO 44220 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2017-03-02 16:29:05.529  INFO 44220 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-03-02 16:29:05.611  INFO 44220 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-03-02 16:29:05.617  INFO 44220 --- [main] com.c.j.w.cms.CMSApplication             : Started CMSApplication in 4.436 seconds (JVM running for 4.881)
+2017-03-02 16:29:32.654  INFO 44220 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-02 16:29:32.656  INFO 44220 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-02 16:29:32.681  INFO 44220 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2017-03-02 16:29:32.707  INFO 44220 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/config.router.js 请求参数：{}
+2017-03-02 16:29:32.709  INFO 44220 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151  访问：/websocket/websocket.js 请求参数：{}
+2017-03-02 16:29:32.797  INFO 44220 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151  访问：/websocket/websocket.js 请求参数：{}
+2017-03-02 16:29:32.928  INFO 44220 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/controllers/chart.js 请求参数：{}
+2017-03-02 16:29:32.992  INFO 44220 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/jquery/charts/sparkline/jquery.sparkline.min.js 请求参数：{}
+2017-03-02 16:29:33.013  INFO 44220 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151  访问：/tpl/blocks/header.html 请求参数：{}
+2017-03-02 16:29:33.269  INFO 44220 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151  访问：/tpl/blocks/nav.html 请求参数：{}
+2017-03-02 16:29:33.407  INFO 44220 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151  访问：/system/init 请求参数：{}
+2017-03-02 16:29:33.499  INFO 44220 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/jquery/charts/flot/jquery.flot.min.js 请求参数：{}
+2017-03-02 16:29:35.099  INFO 44220 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151  访问：/user/login 请求参数：{"password":"e10adc3949ba59abbe56e057f20f883e","userName":"admin"}
+2017-03-02 16:29:35.116  INFO 44220 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/websocket/websocket.js 请求参数：{}
+2017-03-02 16:29:35.149  INFO 44220 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/websocket/websocket.js 请求参数：{}
+2017-03-02 16:29:35.377  INFO 44220 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/system/init 请求参数：{}
+2017-03-02 16:29:35.569  INFO 44220 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.resize.js 请求参数：{}
+2017-03-02 16:29:35.625  INFO 44220 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.tooltip.min.js 请求参数：{}
+2017-03-02 16:29:35.640  INFO 44220 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.spline.js 请求参数：{}
+2017-03-02 16:29:35.653  INFO 44220 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.orderBars.js 请求参数：{}
+2017-03-02 16:29:35.663  INFO 44220 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.pie.min.js 请求参数：{}
+2017-03-02 16:29:48.702  INFO 44220 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/config.router.js 请求参数：{}
+2017-03-02 16:29:48.703  INFO 44220 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/websocket/websocket.js 请求参数：{}
+2017-03-02 16:29:48.774  INFO 44220 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/websocket/websocket.js 请求参数：{}
+2017-03-02 16:29:48.892  INFO 44220 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/controllers/chart.js 请求参数：{}
+2017-03-02 16:29:48.953  INFO 44220 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/sparkline/jquery.sparkline.min.js 请求参数：{}
+2017-03-02 16:29:48.977  INFO 44220 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/tpl/blocks/header.html 请求参数：{}
+2017-03-02 16:29:49.081  INFO 44220 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/tpl/blocks/nav.html 请求参数：{}
+2017-03-02 16:29:49.194  INFO 44220 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/system/init 请求参数：{}
+2017-03-02 16:29:49.267  INFO 44220 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.min.js 请求参数：{}
+2017-03-02 16:29:49.304  INFO 44220 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.resize.js 请求参数：{}
+2017-03-02 16:29:49.316  INFO 44220 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.tooltip.min.js 请求参数：{}
+2017-03-02 16:29:49.325  INFO 44220 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.spline.js 请求参数：{}
+2017-03-02 16:29:49.349  INFO 44220 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.orderBars.js 请求参数：{}
+2017-03-02 16:29:49.356  INFO 44220 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.pie.min.js 请求参数：{}
+2017-03-02 16:30:00.890  INFO 44220 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/jquery-ui-1.10.3.custom.min.js 请求参数：{}
+2017-03-02 16:30:00.914  INFO 44220 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/libs/moment.min.js 请求参数：{}
+2017-03-02 16:30:00.927  INFO 44220 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/fullcalendar/fullcalendar.min.js 请求参数：{}
+2017-03-02 16:30:00.949  INFO 44220 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/app/calendar/calendar.js 请求参数：{}
+2017-03-02 16:30:00.961  INFO 44220 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/modules/angular-ui-calendar/calendar.js 请求参数：{}
+2017-03-02 16:30:03.834  INFO 44220 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/controllers/tab.js 请求参数：{}
+2017-03-02 16:30:03.895  INFO 44220 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/system/init 请求参数：{}
+2017-03-02 16:30:06.096  INFO 44220 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/config.router.js 请求参数：{}
+2017-03-02 16:30:06.257  INFO 44220 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/tpl/blocks/header.html 请求参数：{}
+2017-03-02 16:30:06.281  INFO 44220 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/tpl/blocks/nav.html 请求参数：{}
+2017-03-02 16:30:06.343  INFO 44220 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/system/init 请求参数：{}
+2017-03-02 16:30:08.384  INFO 44220 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/jquery-ui-1.10.3.custom.min.js 请求参数：{}
+2017-03-02 16:30:08.398  INFO 44220 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/libs/moment.min.js 请求参数：{}
+2017-03-02 16:30:08.407  INFO 44220 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/fullcalendar/fullcalendar.min.js 请求参数：{}
+2017-03-02 16:30:08.423  INFO 44220 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/app/calendar/calendar.js 请求参数：{}
+2017-03-02 16:30:08.430  INFO 44220 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/modules/angular-ui-calendar/calendar.js 请求参数：{}
+2017-03-02 16:30:08.562  INFO 44220 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/system/init 请求参数：{}
+2017-03-02 16:30:08.828  INFO 44220 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/controllers/chart.js 请求参数：{}
+2017-03-02 16:30:08.862  INFO 44220 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/sparkline/jquery.sparkline.min.js 请求参数：{}
+2017-03-02 16:30:08.940  INFO 44220 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.min.js 请求参数：{}
+2017-03-02 16:30:08.985  INFO 44220 --- [http-nio-8080-exec-9] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.resize.js 请求参数：{}
+2017-03-02 16:30:08.995  INFO 44220 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.tooltip.min.js 请求参数：{}
+2017-03-02 16:30:09.003  INFO 44220 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.spline.js 请求参数：{}
+2017-03-02 16:30:09.012  INFO 44220 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.orderBars.js 请求参数：{}
+2017-03-02 16:30:09.021  INFO 44220 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.pie.min.js 请求参数：{}
+2017-03-02 16:30:13.011  INFO 44220 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/controllers/form.js 请求参数：{}
+2017-03-02 16:30:13.084  INFO 44220 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/slider/bootstrap-slider.js 请求参数：{}
+2017-03-02 16:30:13.215  INFO 44220 --- [http-nio-8080-exec-9] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/spinner/jquery.bootstrap-touchspin.min.js 请求参数：{}
+2017-03-02 16:30:13.279  INFO 44220 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/chosen/chosen.jquery.min.js 请求参数：{}
+2017-03-02 16:30:13.384  INFO 44220 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/file/bootstrap-filestyle.min.js 请求参数：{}
+2017-03-02 16:30:13.420  INFO 44220 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/wysiwyg/bootstrap-wysiwyg.js 请求参数：{}
+2017-03-02 16:30:13.431  INFO 44220 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/wysiwyg/jquery.hotkeys.js 请求参数：{}
+2017-03-02 16:30:35.500  INFO 44220 --- [http-nio-8080-exec-9] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/modules/ngImgCrop/ng-img-crop.js 请求参数：{}
+2017-03-02 16:30:35.539  INFO 44220 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/controllers/imgcrop.js 请求参数：{}
+2017-03-02 16:32:07.875  INFO 44220 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/modules/angular-ui-select/select.min.js 请求参数：{}
+2017-03-02 16:32:07.895  INFO 44220 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/controllers/select.js 请求参数：{}
+2017-03-02 16:32:42.668  INFO 44220 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/modules/angular-slider/angular-slider.min.js 请求参数：{}
+2017-03-02 16:32:42.708  INFO 44220 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/controllers/slider.js 请求参数：{}
+2017-03-02 16:35:28.773  INFO 44220 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/system/init 请求参数：{}
+2017-03-02 16:36:48.965  INFO 44220 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151  访问：/user/login 请求参数：{"password":"e10adc3949ba59abbe56e057f20f883e","userName":"admin"}
+2017-03-02 16:36:48.983  INFO 44220 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/config.router.js 请求参数：{}
+2017-03-02 16:36:49.097  INFO 44220 --- [http-nio-8080-exec-9] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/controllers/chart.js 请求参数：{}
+2017-03-02 16:36:49.158  INFO 44220 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/sparkline/jquery.sparkline.min.js 请求参数：{}
+2017-03-02 16:36:49.182  INFO 44220 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/tpl/blocks/header.html 请求参数：{}
+2017-03-02 16:36:49.226  INFO 44220 --- [http-nio-8080-exec-9] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/tpl/blocks/nav.html 请求参数：{}
+2017-03-02 16:36:49.328  INFO 44220 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/system/init 请求参数：{}
+2017-03-02 16:36:49.398  INFO 44220 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.min.js 请求参数：{}
+2017-03-02 16:36:49.440  INFO 44220 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.resize.js 请求参数：{}
+2017-03-02 16:36:49.470  INFO 44220 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.tooltip.min.js 请求参数：{}
+2017-03-02 16:36:49.478  INFO 44220 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.spline.js 请求参数：{}
+2017-03-02 16:36:49.496  INFO 44220 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.orderBars.js 请求参数：{}
+2017-03-02 16:36:49.502  INFO 44220 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.pie.min.js 请求参数：{}
+2017-03-02 17:34:33.245  INFO 26160 --- [main] com.c.j.w.cms.CMSApplication             : Starting CMSApplication on DESKTOP-5IJV42V with PID 26160 (D:\workspace(test)\angular\pupa-master\framework\spring-boot-angularjs\target\classes started by zyf in D:\workspace(test)\angular\pupa-master\framework\spring-boot-angularjs)
+2017-03-02 17:34:33.245  INFO 26160 --- [main] com.c.j.w.cms.CMSApplication             : The following profiles are active: dev
+2017-03-02 17:34:33.330  INFO 26160 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@671a5887: startup date [Thu Mar 02 17:34:33 CST 2017]; root of context hierarchy
+2017-03-02 17:34:34.817  WARN 26160 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.c.j.w.cms.dao]' package. Please check your configuration.
+2017-03-02 17:34:34.817  WARN 26160 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'mybatisConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-03-02 17:34:35.518  INFO 26160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c4bdbf03] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-02 17:34:36.058  INFO 26160 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-03-02 17:34:36.070  INFO 26160 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-02 17:34:36.071  INFO 26160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.5
+2017-03-02 17:34:36.172  INFO 26160 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-02 17:34:36.173  INFO 26160 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2844 ms
+2017-03-02 17:34:36.378  INFO 26160 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-02 17:34:36.382  INFO 26160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-02 17:34:36.384  INFO 26160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-02 17:34:36.386  INFO 26160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-02 17:34:36.387  INFO 26160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-02 17:34:36.390  INFO 26160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'accessLogFilter' to: [/*]
+2017-03-02 17:34:36.391  INFO 26160 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'sessionFilter' to: [/*]
+2017-03-02 17:34:36.566  INFO 24792 --- [main] com.c.j.w.cms.CMSApplication             : Starting CMSApplication on DESKTOP-5IJV42V with PID 24792 (D:\workspace(test)\angular\pupa-master\framework\spring-boot-angularjs\target\classes started by zyf in D:\workspace(test)\angular\pupa-master\framework\spring-boot-angularjs)
+2017-03-02 17:34:36.570  INFO 24792 --- [main] com.c.j.w.cms.CMSApplication             : The following profiles are active: dev
+2017-03-02 17:34:36.707  INFO 24792 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@421bba99: startup date [Thu Mar 02 17:34:36 CST 2017]; root of context hierarchy
+2017-03-02 17:34:38.083  INFO 26160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/system/init],methods=[GET]}" onto public com.c.j.w.cms.core.pojo.Result<com.c.j.w.cms.core.pojo.User> com.c.j.w.cms.web.controller.SystemController.init()
+2017-03-02 17:34:38.085  INFO 26160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout],methods=[GET]}" onto public java.lang.String com.c.j.w.cms.web.controller.user.UserController.logout()
+2017-03-02 17:34:38.090  INFO 26160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.c.j.w.cms.core.pojo.Result com.c.j.w.cms.web.controller.user.UserController.login(java.lang.String,java.lang.String)
+2017-03-02 17:34:38.091  INFO 26160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-03-02 17:34:38.144  INFO 26160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-03-02 17:34:38.144  INFO 26160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-03-02 17:34:38.145  INFO 26160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-03-02 17:34:38.148  INFO 26160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-02 17:34:38.149  INFO 26160 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-02 17:34:38.644  INFO 26160 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@671a5887: startup date [Thu Mar 02 17:34:33 CST 2017]; root of context hierarchy
+2017-03-02 17:34:38.731  INFO 26160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-02 17:34:38.731  INFO 26160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-02 17:34:38.763  INFO 26160 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionResolver
+2017-03-02 17:34:38.817  WARN 24792 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.c.j.w.cms.dao]' package. Please check your configuration.
+2017-03-02 17:34:38.820  WARN 24792 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'mybatisConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-03-02 17:34:38.836  INFO 26160 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-02 17:34:38.874  INFO 26160 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-03-02 17:34:39.991  INFO 26160 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-02 17:34:39.992  INFO 26160 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'mainDataSource' has been autodetected for JMX exposure
+2017-03-02 17:34:39.996  INFO 26160 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'mainDataSource': registering with JMX server as MBean [com.alibaba.druid.pool.xa:name=mainDataSource,type=DruidXADataSource]
+2017-03-02 17:34:40.002  INFO 26160 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-03-02 17:34:40.034  INFO 24792 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1532a582] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-02 17:34:40.049  INFO 26160 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2017-03-02 17:34:40.177  INFO 26160 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-03-02 17:34:40.378 ERROR 26160 --- [main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler [http-nio-8080]
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_60]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_60]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_60]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at com.c.j.w.cms.CMSApplication.main(CMSApplication.java:28) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147) [idea_rt.jar:na]
+
+2017-03-02 17:34:40.379 ERROR 26160 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at com.c.j.w.cms.CMSApplication.main(CMSApplication.java:28) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147) [idea_rt.jar:na]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_60]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_60]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_60]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	... 19 common frames omitted
+
+2017-03-02 17:34:40.389  INFO 26160 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2017-03-02 17:34:40.403  WARN 26160 --- [localhost-startStop-1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2017-03-02 17:34:40.491  INFO 26160 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-03-02 17:34:40.494 ERROR 26160 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2017-03-02 17:34:40.495  INFO 26160 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@671a5887: startup date [Thu Mar 02 17:34:33 CST 2017]; root of context hierarchy
+2017-03-02 17:34:40.497  INFO 26160 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-02 17:34:40.497  INFO 26160 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-03-02 17:34:41.005  INFO 24792 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-03-02 17:34:41.021  INFO 24792 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-02 17:34:41.021  INFO 24792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.5
+2017-03-02 17:34:41.148  INFO 24792 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-02 17:34:41.149  INFO 24792 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4445 ms
+2017-03-02 17:34:41.327  INFO 24792 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-02 17:34:41.332  INFO 24792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-02 17:34:41.332  INFO 24792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-02 17:34:41.333  INFO 24792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-02 17:34:41.333  INFO 24792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-02 17:34:41.333  INFO 24792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'accessLogFilter' to: [/*]
+2017-03-02 17:34:41.333  INFO 24792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'sessionFilter' to: [/*]
+2017-03-02 17:34:41.925  INFO 24792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/system/init],methods=[GET]}" onto public com.c.j.w.cms.core.pojo.Result<com.c.j.w.cms.core.pojo.User> com.c.j.w.cms.web.controller.SystemController.init()
+2017-03-02 17:34:41.927  INFO 24792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.c.j.w.cms.core.pojo.Result com.c.j.w.cms.web.controller.user.UserController.login(java.lang.String,java.lang.String)
+2017-03-02 17:34:41.927  INFO 24792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout],methods=[GET]}" onto public java.lang.String com.c.j.w.cms.web.controller.user.UserController.logout()
+2017-03-02 17:34:41.928  INFO 24792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-03-02 17:34:41.929  INFO 24792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-03-02 17:34:41.930  INFO 24792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-03-02 17:34:41.931  INFO 24792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-03-02 17:34:41.934  INFO 24792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-02 17:34:41.934  INFO 24792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-02 17:34:42.282  INFO 24792 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@421bba99: startup date [Thu Mar 02 17:34:36 CST 2017]; root of context hierarchy
+2017-03-02 17:34:42.340  INFO 24792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-02 17:34:42.340  INFO 24792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-02 17:34:42.358  INFO 24792 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionResolver
+2017-03-02 17:34:42.383  INFO 24792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-02 17:34:42.433  INFO 24792 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-03-02 17:34:42.697  INFO 24792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-02 17:34:42.699  INFO 24792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'mainDataSource' has been autodetected for JMX exposure
+2017-03-02 17:34:42.706  INFO 24792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'mainDataSource': registering with JMX server as MBean [com.alibaba.druid.pool.xa:name=mainDataSource,type=DruidXADataSource]
+2017-03-02 17:34:42.715  INFO 24792 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-03-02 17:34:42.737  INFO 24792 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2017-03-02 17:34:42.817  INFO 24792 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-03-02 17:34:42.855 ERROR 24792 --- [main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler [http-nio-8080]
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_60]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_60]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_60]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at com.c.j.w.cms.CMSApplication.main(CMSApplication.java:28) [classes/:na]
+
+2017-03-02 17:34:42.855 ERROR 24792 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at com.c.j.w.cms.CMSApplication.main(CMSApplication.java:28) [classes/:na]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_60]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_60]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_60]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	... 14 common frames omitted
+
+2017-03-02 17:34:42.870  INFO 24792 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2017-03-02 17:34:42.886  WARN 24792 --- [localhost-startStop-1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2017-03-02 17:34:42.886  INFO 24792 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-03-02 17:34:42.902 ERROR 24792 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2017-03-02 17:34:42.902  INFO 24792 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@421bba99: startup date [Thu Mar 02 17:34:36 CST 2017]; root of context hierarchy
+2017-03-02 17:34:42.902  INFO 24792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-02 17:34:42.902  INFO 24792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-03-02 17:36:11.065  INFO 424 --- [main] com.c.j.w.cms.CMSApplication             : Starting CMSApplication on DESKTOP-5IJV42V with PID 424 (D:\workspace(test)\angular\pupa-master\framework\spring-boot-angularjs\target\classes started by zyf in D:\workspace(test)\angular\pupa-master\framework\spring-boot-angularjs)
+2017-03-02 17:36:11.069  INFO 424 --- [main] com.c.j.w.cms.CMSApplication             : The following profiles are active: dev
+2017-03-02 17:36:11.151  INFO 424 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@421bba99: startup date [Thu Mar 02 17:36:11 CST 2017]; root of context hierarchy
+2017-03-02 17:36:12.128  WARN 424 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.c.j.w.cms.dao]' package. Please check your configuration.
+2017-03-02 17:36:12.129  WARN 424 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'mybatisConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-03-02 17:36:12.369  INFO 424 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ccd1d1ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-02 17:36:12.794  INFO 424 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-03-02 17:36:12.807  INFO 424 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-02 17:36:12.809  INFO 424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.5
+2017-03-02 17:36:12.905  INFO 424 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-02 17:36:12.905  INFO 424 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1757 ms
+2017-03-02 17:36:13.067  INFO 424 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-02 17:36:13.072  INFO 424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-02 17:36:13.073  INFO 424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-02 17:36:13.073  INFO 424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-02 17:36:13.073  INFO 424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-02 17:36:13.073  INFO 424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'accessLogFilter' to: [/*]
+2017-03-02 17:36:13.073  INFO 424 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'sessionFilter' to: [/*]
+2017-03-02 17:36:13.652  INFO 424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/system/init],methods=[GET]}" onto public com.c.j.w.cms.core.pojo.Result<com.c.j.w.cms.core.pojo.User> com.c.j.w.cms.web.controller.SystemController.init()
+2017-03-02 17:36:13.654  INFO 424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.c.j.w.cms.core.pojo.Result com.c.j.w.cms.web.controller.user.UserController.login(java.lang.String,java.lang.String)
+2017-03-02 17:36:13.654  INFO 424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout],methods=[GET]}" onto public java.lang.String com.c.j.w.cms.web.controller.user.UserController.logout()
+2017-03-02 17:36:13.654  INFO 424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-03-02 17:36:13.656  INFO 424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-03-02 17:36:13.657  INFO 424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-03-02 17:36:13.657  INFO 424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-03-02 17:36:13.659  INFO 424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-02 17:36:13.660  INFO 424 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-02 17:36:13.986  INFO 424 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@421bba99: startup date [Thu Mar 02 17:36:11 CST 2017]; root of context hierarchy
+2017-03-02 17:36:14.062  INFO 424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-02 17:36:14.063  INFO 424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-02 17:36:14.078  INFO 424 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionResolver
+2017-03-02 17:36:14.100  INFO 424 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-02 17:36:14.122  INFO 424 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-03-02 17:36:14.373  INFO 424 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-02 17:36:14.375  INFO 424 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'mainDataSource' has been autodetected for JMX exposure
+2017-03-02 17:36:14.379  INFO 424 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'mainDataSource': registering with JMX server as MBean [com.alibaba.druid.pool.xa:name=mainDataSource,type=DruidXADataSource]
+2017-03-02 17:36:14.387  INFO 424 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-03-02 17:36:14.409  INFO 424 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2017-03-02 17:36:14.501  INFO 424 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-03-02 17:36:14.560  INFO 424 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-03-02 17:36:14.565  INFO 424 --- [main] com.c.j.w.cms.CMSApplication             : Started CMSApplication in 4.165 seconds (JVM running for 4.648)
+2017-03-02 17:37:10.182  INFO 424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-02 17:37:10.183  INFO 424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-02 17:37:10.198  INFO 424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-03-02 17:37:10.295  INFO 424 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/config.router.js 请求参数：{}
+2017-03-02 17:37:10.497  INFO 424 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/controllers/chart.js 请求参数：{}
+2017-03-02 17:37:11.067  INFO 424 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/jquery/charts/sparkline/jquery.sparkline.min.js 请求参数：{}
+2017-03-02 17:37:11.112  INFO 424 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151  访问：/tpl/blocks/header.html 请求参数：{}
+2017-03-02 17:37:11.142  INFO 424 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151  访问：/tpl/blocks/nav.html 请求参数：{}
+2017-03-02 17:37:11.288  INFO 424 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151  访问：/system/init 请求参数：{}
+2017-03-02 17:37:11.385  INFO 424 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/jquery/charts/flot/jquery.flot.min.js 请求参数：{}
+2017-03-02 17:37:12.963  INFO 424 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151  访问：/user/login 请求参数：{"password":"e10adc3949ba59abbe56e057f20f883e","userName":"admin"}
+2017-03-02 17:37:13.230  INFO 424 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/system/init 请求参数：{}
+2017-03-02 17:37:13.318  INFO 424 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.resize.js 请求参数：{}
+2017-03-02 17:37:13.329  INFO 424 --- [http-nio-8080-exec-9] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.tooltip.min.js 请求参数：{}
+2017-03-02 17:37:13.347  INFO 424 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.spline.js 请求参数：{}
+2017-03-02 17:37:13.357  INFO 424 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.orderBars.js 请求参数：{}
+2017-03-02 17:37:13.368  INFO 424 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.pie.min.js 请求参数：{}
+2017-03-02 17:37:20.726  INFO 424 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/modules/angular-file-upload/angular-file-upload.min.js 请求参数：{}
+2017-03-02 17:37:20.727  INFO 424 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/controllers/form.js 请求参数：{}
+2017-03-02 17:37:20.761  INFO 424 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/controllers/file-upload.js 请求参数：{}
+2017-06-13 09:45:02.393  INFO 22208 --- [main] com.c.j.w.cms.CMSApplication             : Starting CMSApplication on DESKTOP-5IJV42V with PID 22208 (D:\workspace(test)\angular\pupa-master\framework\spring-boot-angularjs\target\classes started by zyf in D:\workspace(test)\angular\pupa-master\framework\spring-boot-angularjs)
+2017-06-13 09:45:02.399  INFO 22208 --- [main] com.c.j.w.cms.CMSApplication             : The following profiles are active: dev
+2017-06-13 09:45:02.481  INFO 22208 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fbe37eb: startup date [Tue Jun 13 09:45:02 CST 2017]; root of context hierarchy
+2017-06-13 09:45:04.047  WARN 22208 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.c.j.w.cms.dao]' package. Please check your configuration.
+2017-06-13 09:45:04.048  WARN 22208 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'mybatisConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-06-13 09:45:04.301  INFO 22208 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$70824571] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-13 09:45:04.925  INFO 22208 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-06-13 09:45:04.940  INFO 22208 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-06-13 09:45:04.941  INFO 22208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.5
+2017-06-13 09:45:05.078  INFO 22208 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-06-13 09:45:05.078  INFO 22208 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2599 ms
+2017-06-13 09:45:05.233  INFO 22208 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-13 09:45:05.314  INFO 22208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-13 09:45:05.314  INFO 22208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-13 09:45:05.314  INFO 22208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-13 09:45:05.315  INFO 22208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-13 09:45:05.315  INFO 22208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'accessLogFilter' to: [/*]
+2017-06-13 09:45:05.315  INFO 22208 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'sessionFilter' to: [/*]
+2017-06-13 09:45:06.041  INFO 22208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/system/init],methods=[GET]}" onto public com.c.j.w.cms.core.pojo.Result<com.c.j.w.cms.core.pojo.User> com.c.j.w.cms.web.controller.SystemController.init()
+2017-06-13 09:45:06.043  INFO 22208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.c.j.w.cms.core.pojo.Result com.c.j.w.cms.web.controller.user.UserController.login(java.lang.String,java.lang.String)
+2017-06-13 09:45:06.044  INFO 22208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout],methods=[GET]}" onto public java.lang.String com.c.j.w.cms.web.controller.user.UserController.logout()
+2017-06-13 09:45:06.044  INFO 22208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-06-13 09:45:06.047  INFO 22208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-06-13 09:45:06.047  INFO 22208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-06-13 09:45:06.048  INFO 22208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-06-13 09:45:06.050  INFO 22208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-13 09:45:06.050  INFO 22208 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-13 09:45:06.401  INFO 22208 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fbe37eb: startup date [Tue Jun 13 09:45:02 CST 2017]; root of context hierarchy
+2017-06-13 09:45:06.456  INFO 22208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-13 09:45:06.457  INFO 22208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-13 09:45:06.474  INFO 22208 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionResolver
+2017-06-13 09:45:06.506  INFO 22208 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-13 09:45:06.530  INFO 22208 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-06-13 09:45:06.922  INFO 22208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-06-13 09:45:06.923  INFO 22208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'mainDataSource' has been autodetected for JMX exposure
+2017-06-13 09:45:06.929  INFO 22208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'mainDataSource': registering with JMX server as MBean [com.alibaba.druid.pool.xa:name=mainDataSource,type=DruidXADataSource]
+2017-06-13 09:45:06.960  INFO 22208 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-06-13 09:45:06.982  INFO 22208 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2017-06-13 09:45:06.992  INFO 22208 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-06-13 09:45:07.048 ERROR 22208 --- [main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler [http-nio-8080]
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_60]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_60]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_60]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at com.c.j.w.cms.CMSApplication.main(CMSApplication.java:28) [classes/:na]
+
+2017-06-13 09:45:07.050 ERROR 22208 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at com.c.j.w.cms.CMSApplication.main(CMSApplication.java:28) [classes/:na]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_60]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_60]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_60]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_60]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_60]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	... 14 common frames omitted
+
+2017-06-13 09:45:07.056  INFO 22208 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2017-06-13 09:45:07.104  WARN 22208 --- [localhost-startStop-1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2017-06-13 09:45:07.145  INFO 22208 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-06-13 09:45:07.150 ERROR 22208 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2017-06-13 09:45:07.168  INFO 22208 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fbe37eb: startup date [Tue Jun 13 09:45:02 CST 2017]; root of context hierarchy
+2017-06-13 09:45:07.170  INFO 22208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-06-13 09:45:07.170  INFO 22208 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-06-13 09:45:41.945  INFO 5592 --- [main] com.c.j.w.cms.CMSApplication             : Starting CMSApplication on DESKTOP-5IJV42V with PID 5592 (D:\workspace(test)\angular\pupa-master\framework\spring-boot-angularjs\target\classes started by zyf in D:\workspace(test)\angular\pupa-master\framework\spring-boot-angularjs)
+2017-06-13 09:45:41.951  INFO 5592 --- [main] com.c.j.w.cms.CMSApplication             : The following profiles are active: dev
+2017-06-13 09:45:42.018  INFO 5592 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fbe37eb: startup date [Tue Jun 13 09:45:42 CST 2017]; root of context hierarchy
+2017-06-13 09:45:42.880  WARN 5592 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.c.j.w.cms.dao]' package. Please check your configuration.
+2017-06-13 09:45:42.881  WARN 5592 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'mybatisConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-06-13 09:45:43.098  INFO 5592 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$928c1978] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-13 09:45:43.577  INFO 5592 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-06-13 09:45:43.586  INFO 5592 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-06-13 09:45:43.587  INFO 5592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.5
+2017-06-13 09:45:43.653  INFO 5592 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-06-13 09:45:43.654  INFO 5592 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1639 ms
+2017-06-13 09:45:43.803  INFO 5592 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-13 09:45:43.807  INFO 5592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-13 09:45:43.808  INFO 5592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-13 09:45:43.808  INFO 5592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-13 09:45:43.809  INFO 5592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-13 09:45:43.809  INFO 5592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'accessLogFilter' to: [/*]
+2017-06-13 09:45:43.809  INFO 5592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'sessionFilter' to: [/*]
+2017-06-13 09:45:44.381  INFO 5592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/system/init],methods=[GET]}" onto public com.c.j.w.cms.core.pojo.Result<com.c.j.w.cms.core.pojo.User> com.c.j.w.cms.web.controller.SystemController.init()
+2017-06-13 09:45:44.385  INFO 5592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[GET]}" onto public com.c.j.w.cms.core.pojo.Result com.c.j.w.cms.web.controller.user.UserController.login(java.lang.String,java.lang.String)
+2017-06-13 09:45:44.385  INFO 5592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logout],methods=[GET]}" onto public java.lang.String com.c.j.w.cms.web.controller.user.UserController.logout()
+2017-06-13 09:45:44.385  INFO 5592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-06-13 09:45:44.388  INFO 5592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-06-13 09:45:44.389  INFO 5592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-06-13 09:45:44.391  INFO 5592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-06-13 09:45:44.393  INFO 5592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-13 09:45:44.393  INFO 5592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-13 09:45:44.727  INFO 5592 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fbe37eb: startup date [Tue Jun 13 09:45:42 CST 2017]; root of context hierarchy
+2017-06-13 09:45:44.793  INFO 5592 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-13 09:45:44.793  INFO 5592 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-13 09:45:44.814  INFO 5592 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionResolver
+2017-06-13 09:45:44.837  INFO 5592 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-13 09:45:44.859  INFO 5592 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-06-13 09:45:45.121  INFO 5592 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-06-13 09:45:45.122  INFO 5592 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'mainDataSource' has been autodetected for JMX exposure
+2017-06-13 09:45:45.129  INFO 5592 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'mainDataSource': registering with JMX server as MBean [com.alibaba.druid.pool.xa:name=mainDataSource,type=DruidXADataSource]
+2017-06-13 09:45:45.136  INFO 5592 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-06-13 09:45:45.163  INFO 5592 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2017-06-13 09:45:45.171  INFO 5592 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-06-13 09:45:45.243  INFO 5592 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-06-13 09:45:45.248  INFO 5592 --- [main] com.c.j.w.cms.CMSApplication             : Started CMSApplication in 3.75 seconds (JVM running for 4.251)
+2017-06-13 09:45:56.346  INFO 5592 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-06-13 09:45:56.346  INFO 5592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-06-13 09:45:56.365  INFO 5592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2017-06-13 09:45:56.701  INFO 5592 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/jquery/jquery.min.js 请求参数：{}
+2017-06-13 09:45:56.701  INFO 5592 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/angular/angular-animate/angular-animate.js 请求参数：{}
+2017-06-13 09:45:56.701  INFO 5592 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/angular/angular-cookies/angular-cookies.js 请求参数：{}
+2017-06-13 09:45:56.701  INFO 5592 --- [http-nio-8080-exec-9] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/DojoyParams.js 请求参数：{}
+2017-06-13 09:45:56.701  INFO 5592 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/angular/angular.js 请求参数：{}
+2017-06-13 09:45:56.744  INFO 5592 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/angular/angular-resource/angular-resource.js 请求参数：{}
+2017-06-13 09:45:56.746  INFO 5592 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/angular/angular-touch/angular-touch.js 请求参数：{}
+2017-06-13 09:45:56.746  INFO 5592 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/angular/angular-sanitize/angular-sanitize.js 请求参数：{}
+2017-06-13 09:45:56.777  INFO 5592 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/angular/angular-ui-router/angular-ui-router.js 请求参数：{}
+2017-06-13 09:45:56.780  INFO 5592 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/angular/ngstorage/ngStorage.js 请求参数：{}
+2017-06-13 09:45:56.781  INFO 5592 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/angular/angular-bootstrap/ui-bootstrap-tpls.js 请求参数：{}
+2017-06-13 09:45:56.786  INFO 5592 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/angular/angular-translate/angular-translate.js 请求参数：{}
+2017-06-13 09:45:56.788  INFO 5592 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/angular/angular-translate/loader-static-files.js 请求参数：{}
+2017-06-13 09:45:56.801  INFO 5592 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/angular/oclazyload/ocLazyLoad.js 请求参数：{}
+2017-06-13 09:45:56.803  INFO 5592 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/angular/angular-translate/storage-local.js 请求参数：{}
+2017-06-13 09:45:56.803  INFO 5592 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/jedate/jquery.jedate.js 请求参数：{}
+2017-06-13 09:45:56.806  INFO 5592 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/directives/ui-focus.js 请求参数：{}
+2017-06-13 09:45:56.807  INFO 5592 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/angular/angular-translate/storage-cookie.js 请求参数：{}
+2017-06-13 09:45:56.823  INFO 5592 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/directives/ui-jq.js 请求参数：{}
+2017-06-13 09:45:56.826  INFO 5592 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/directives/ui-module.js 请求参数：{}
+2017-06-13 09:45:56.830  INFO 5592 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/directives/ui-validate.js 请求参数：{}
+2017-06-13 09:45:56.831  INFO 5592 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/directives/ui-shift.js 请求参数：{}
+2017-06-13 09:45:56.833  INFO 5592 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/directives/ui-toggleclass.js 请求参数：{}
+2017-06-13 09:45:56.837  INFO 5592 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/directives/ui-nav.js 请求参数：{}
+2017-06-13 09:45:56.837  INFO 5592 --- [http-nio-8080-exec-9] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/directives/ui-scroll.js 请求参数：{}
+2017-06-13 09:45:56.839  INFO 5592 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/controllers/bootstrap.js 请求参数：{}
+2017-06-13 09:45:56.849  INFO 5592 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/kindeditor/kindeditor/kindeditor-all-min.js 请求参数：{}
+2017-06-13 09:45:56.850  INFO 5592 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/kindeditor/kindeditor/lang/zh-CN.js 请求参数：{}
+2017-06-13 09:45:56.850  INFO 5592 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/filters/fromNow.js 请求参数：{}
+2017-06-13 09:45:56.850  INFO 5592 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/kindeditor/build/angular-kindeditor.js 请求参数：{}
+2017-06-13 09:45:56.855  INFO 5592 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/directives/setnganimate.js 请求参数：{}
+2017-06-13 09:45:56.855  INFO 5592 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/directives/ui-butterbar.js 请求参数：{}
+2017-06-13 09:45:56.856  INFO 5592 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/services/ui-load.js 请求参数：{}
+2017-06-13 09:45:56.861  INFO 5592 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/config.router.js 请求参数：{}
+2017-06-13 09:45:56.861  INFO 5592 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/directives/ui-fullscreen.js 请求参数：{}
+2017-06-13 09:45:56.862  INFO 5592 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/main.js 请求参数：{}
+2017-06-13 09:45:56.862  INFO 5592 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/config.lazyload.js 请求参数：{}
+2017-06-13 09:45:56.865  INFO 5592 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/common.js 请求参数：{}
+2017-06-13 09:45:56.867  INFO 5592 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/config.js 请求参数：{}
+2017-06-13 09:45:56.870  INFO 5592 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/app.js 请求参数：{}
+2017-06-13 09:45:56.870  INFO 5592 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/jquery/layer/layer.js 请求参数：{}
+2017-06-13 09:45:57.114  INFO 5592 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/l10n/en.json 请求参数：{}
+2017-06-13 09:45:57.121  INFO 5592 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/controllers/chart.js 请求参数：{}
+2017-06-13 09:45:57.180  INFO 5592 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/jquery/charts/sparkline/jquery.sparkline.min.js 请求参数：{}
+2017-06-13 09:45:57.208  INFO 5592 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151  访问：/tpl/blocks/header.html 请求参数：{}
+2017-06-13 09:45:57.209  INFO 5592 --- [http-nio-8080-exec-9] Access Log                               : **************************************
+IP：192.168.203.151  访问：/tpl/blocks/aside.html 请求参数：{}
+2017-06-13 09:45:57.213  INFO 5592 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151  访问：/tpl/blocks/settings.html 请求参数：{}
+2017-06-13 09:45:57.215  INFO 5592 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/fonts/fontawesome-webfont.woff 请求参数：{"v":"4.2.0"}
+2017-06-13 09:45:57.217  INFO 5592 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/fonts/Simple-Line-Icons.woff 请求参数：{}
+2017-06-13 09:45:57.219  INFO 5592 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/fonts/glyphicons-halflings-regular.woff 请求参数：{}
+2017-06-13 09:45:57.458  INFO 5592 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151  访问：/tpl/blocks/nav.html 请求参数：{}
+2017-06-13 09:45:57.486  INFO 5592 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/fonts/Simple-Line-Icons.ttf 请求参数：{}
+2017-06-13 09:45:57.486  INFO 5592 --- [http-nio-8080-exec-9] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/fonts/glyphicons-halflings-regular.ttf 请求参数：{}
+2017-06-13 09:45:57.486  INFO 5592 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/fonts/fontawesome-webfont.ttf 请求参数：{"v":"4.2.0"}
+2017-06-13 09:45:57.531  INFO 5592 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151  访问：/system/init 请求参数：{}
+2017-06-13 09:45:57.645  INFO 5592 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151  访问：/resource/vendor/jquery/charts/flot/jquery.flot.min.js 请求参数：{}
+2017-06-13 09:45:57.716  INFO 5592 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151  访问：/js/md5.js 请求参数：{}
+2017-06-13 09:45:59.470  INFO 5592 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151  访问：/user/login 请求参数：{"password":"e10adc3949ba59abbe56e057f20f883e","userName":"admin"}
+2017-06-13 09:45:59.515  INFO 5592 --- [http-nio-8080-exec-9] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/DojoyParams.js 请求参数：{}
+2017-06-13 09:45:59.647  INFO 5592 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/l10n/en.json 请求参数：{}
+2017-06-13 09:45:59.761  INFO 5592 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/fonts/fontawesome-webfont.woff 请求参数：{"v":"4.2.0"}
+2017-06-13 09:45:59.762  INFO 5592 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/fonts/Simple-Line-Icons.woff 请求参数：{}
+2017-06-13 09:45:59.767  INFO 5592 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/fonts/glyphicons-halflings-regular.woff 请求参数：{}
+2017-06-13 09:45:59.932  INFO 5592 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/system/init 请求参数：{}
+2017-06-13 09:46:00.067  INFO 5592 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.resize.js 请求参数：{}
+2017-06-13 09:46:00.090  INFO 5592 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.tooltip.min.js 请求参数：{}
+2017-06-13 09:46:00.102  INFO 5592 --- [http-nio-8080-exec-9] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.spline.js 请求参数：{}
+2017-06-13 09:46:00.111  INFO 5592 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.orderBars.js 请求参数：{}
+2017-06-13 09:46:00.119  INFO 5592 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/flot/jquery.flot.pie.min.js 请求参数：{}
+2017-06-13 09:46:00.129  INFO 5592 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/easypiechart/jquery.easy-pie-chart.js 请求参数：{}
+2017-06-13 09:46:00.235  INFO 5592 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/libs/screenfull.min.js 请求参数：{}
+2017-06-13 09:46:06.835  INFO 5592 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/jquery-ui-1.10.3.custom.min.js 请求参数：{}
+2017-06-13 09:46:06.856  INFO 5592 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/libs/moment.min.js 请求参数：{}
+2017-06-13 09:46:06.872  INFO 5592 --- [http-nio-8080-exec-9] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/fullcalendar/fullcalendar.min.js 请求参数：{}
+2017-06-13 09:46:06.893  INFO 5592 --- [http-nio-8080-exec-6] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/app/calendar/calendar.js 请求参数：{}
+2017-06-13 09:46:06.901  INFO 5592 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/modules/angular-ui-calendar/calendar.js 请求参数：{}
+2017-06-13 09:46:08.837  INFO 5592 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/app/mail/mail.js 请求参数：{}
+2017-06-13 09:46:08.845  INFO 5592 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/app/mail/mail-service.js 请求参数：{}
+2017-06-13 09:46:08.865  INFO 5592 --- [http-nio-8080-exec-8] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/app/mail/mails.json 请求参数：{}
+2017-06-13 09:46:18.272  INFO 5592 --- [http-nio-8080-exec-3] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/controllers/form.js 请求参数：{}
+2017-06-13 09:46:18.273  INFO 5592 --- [http-nio-8080-exec-2] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/modules/angular-ui-select/select.min.js 请求参数：{}
+2017-06-13 09:46:18.289  INFO 5592 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/controllers/select.js 请求参数：{}
+2017-06-13 09:46:26.578  INFO 5592 --- [http-nio-8080-exec-9] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/js/controllers/select.js 请求参数：{}
+2017-06-13 09:46:26.735  INFO 5592 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/tpl/blocks/header.html 请求参数：{}
+2017-06-13 09:46:26.736  INFO 5592 --- [http-nio-8080-exec-10] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/tpl/blocks/aside.html 请求参数：{}
+2017-06-13 09:46:26.738  INFO 5592 --- [http-nio-8080-exec-5] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/tpl/blocks/settings.html 请求参数：{}
+2017-06-13 09:46:26.812  INFO 5592 --- [http-nio-8080-exec-7] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/jquery/charts/easypiechart/jquery.easy-pie-chart.js 请求参数：{}
+2017-06-13 09:46:26.846  INFO 5592 --- [http-nio-8080-exec-4] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/tpl/blocks/nav.html 请求参数：{}
+2017-06-13 09:46:26.894  INFO 5592 --- [http-nio-8080-exec-9] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/system/init 请求参数：{}
+2017-06-13 09:46:26.952  INFO 5592 --- [http-nio-8080-exec-1] Access Log                               : **************************************
+IP：192.168.203.151 用户：admin 访问：/resource/vendor/libs/screenfull.min.js 请求参数：{}
