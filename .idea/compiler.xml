@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-angularjs" />
+        <module name="spring-boot-demo-2-1" />
         <module name="testProj" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-boot-angularjs" target="1.8" />
+      <module name="spring-boot-demo-2-1" target="1.8" />
       <module name="testProj" target="1.5" />
     </bytecodeTargetLevel>
   </component>
